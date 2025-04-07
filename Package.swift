@@ -16,7 +16,7 @@ let package = Package(
     ),
     .binaryTarget(
       name: "Mad",
-      url: "https://github.com/abinchy/mad/releases/download/1.0.2/Mad_1.0.2.zip",
+      url: "https://github.com/abinchy/mad/releases/download/1.0.3/Mad_1.0.3.zip",
       checksum: "f64db501195001a82b9132efaa81199fa23496d4e9df950745be0cf25ab2b33c"
     ),
   ]
