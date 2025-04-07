@@ -8,7 +8,9 @@ let package = Package(
     .library(name: "Mad", targets: ["MadTarget"]),
   ],
   dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "11.12.0")
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "11.12.0"),
+        .package(url: "https://github.com/myTargetSDK/mytarget-ios-spm", exact: "5.26.0"),
+        .package(url: "https://github.com/yandexmobile/yandex-ads-sdk-ios", exact: "7.12.0"),
   ],
   targets: [
     .target(
@@ -16,6 +18,8 @@ let package = Package(
       dependencies: [
         .target(name: "Mad"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
+        .product(name: "MyTargetSDK", package: "mytarget-ios-spm")
+        .product(name: "YandexMobileAdsPackage", package: "yandex-ads-sdk-ios")
       ]
     ),
     .binaryTarget(
