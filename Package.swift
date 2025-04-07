@@ -15,7 +15,7 @@ let package = Package(
     .target(
       name: "MadTarget",
       dependencies: [
-        .target(name: "Mad")，
+        .target(name: "Mad"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
       ]
     ),
