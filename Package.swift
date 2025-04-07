@@ -7,11 +7,16 @@ let package = Package(
   products: [
     .library(name: "Mad", targets: ["MadTarget"]),
   ],
+  dependencies: [
+        // ✅ Add this line
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "11.12.0")
+  ],
   targets: [
     .target(
       name: "MadTarget",
       dependencies: [
-        .target(name: "Mad")
+        .target(name: "Mad")，
+        .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
       ]
     ),
     .binaryTarget(
