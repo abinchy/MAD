@@ -15,4 +15,8 @@ Pod::Spec.new do |spec|
     s.vendored_frameworks  = "Mad.xcframework"
     s.preserve_paths       = "Mad.xcframework"
   end
+
+  spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64'
+  }
 end
