@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                = "Mad"
-  spec.version             = "1.0.1"
+  spec.version             = "1.0.2"
   spec.summary             = "Mad SDK"
   spec.description         = "Mad SDK for iOS development"
   spec.homepage            = "https://mad.com"
