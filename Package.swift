@@ -19,7 +19,7 @@ let package = Package(
         .target(name: "Mad"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
         .product(name: "MyTargetSDK", package: "mytarget-ios-spm"),
-        .product(name: "YandexMobileAdsPackage", package: "yandex-ads-sdk-ios"),
+        .product(name: "YandexMobileAds", package: "yandex-ads-sdk-ios"),
       ]
     ),
     .binaryTarget(
