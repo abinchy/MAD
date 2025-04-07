@@ -64,3 +64,6 @@ iOSInjectionProject/
 /Mad.zip
 .DS_Store
 
+.gitattributes
+.swiftpm/
+
